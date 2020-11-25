@@ -68,5 +68,12 @@ figure figcaption {
 figure a.hover {
    width: 400px;
    z-index: 2;
-   transition: letter-spacing 2s;
+   transition: width 2s;
+}
+
+figure a.hover img {
+   width: 100%;
+   box-shadow: 10px 10px 20px;
+   filter: grayscale(1);
+   transition: filter 2s;
 }
