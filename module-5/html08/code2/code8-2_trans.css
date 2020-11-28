@@ -65,19 +65,20 @@ figure figcaption {
    transform: rotate(30deg)
 }
 
-figure a.hover {
+div#wall > figure a:hover {
    width: 400px;
    z-index: 2;
    transition: width 2s;
 }
 
-figure a.hover img {
+div#wall > img a:hover  {
    width: 100%;
    box-shadow: 10px 10px 20px;
    filter: grayscale(1);
    transition: filter 2s;
 }
 
-figure a.hover figcaption {
+div#wall > figcaption a:hover  {
    transition: font-size 1.2em 2s;
 }
+
