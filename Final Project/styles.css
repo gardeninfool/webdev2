@@ -86,19 +86,30 @@ nav li {
 
 /* Requirement: 11/15/20 Section Styles will use flex box; each h2 heading will have a background picture */
 
-div main h2 {
+section#main h2 {
 	text-align: center;
 	color: rgb(235, 73, 61);
 	font-family: cavolini, serif;
 	font-size: 1.8em;
 }
 
-div section h3 {
+section#categories {
+	display: flex;
+	flex-flow: row wrap;
+  }
+	
+  section#categories h3 {
+	flex: 1 3 auto;
+	border: 2px solid rgb(29, 173, 125);
+	border-radius: 40px;
+	margin: 30px;
 	text-align: center;
-	color: rgb(29, 173, 125);
+	padding: 70px;
+	background-color: rgb(220, 246, 227);
+	color: rgb(245, 87, 190);
 	font-family: cavolini, serif;
 	font-size: 1.5em;
-}
+  }
 
 /* Requirement: 11/15/20 Footer Styles */
 
