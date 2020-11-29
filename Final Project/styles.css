@@ -81,21 +81,21 @@ nav li {
 	text-decoration: none; 
  }
  nav a:link { color: rgb(0, 0, 0); }
- nav a:visited { color: rgb(141, 109, 161); }
+ nav a:visited { color: rgb(171, 31, 245); }
  nav a:hover { color: rgb(111, 179, 157); }
 
 /* Requirement: 11/15/20 Section Styles will use flex box; each h2 heading will have a background picture */
 
 div main h2 {
 	text-align: center;
-	color: rgb(215, 167, 245);
+	color: rgb(235, 73, 61);
 	font-family: cavolini, serif;
 	font-size: 1.8em;
 }
 
 div section h3 {
 	text-align: center;
-	color: rgb(155, 250, 220);
+	color: rgb(29, 173, 125);
 	font-family: cavolini, serif;
 	font-size: 1.5em;
 }
@@ -103,7 +103,7 @@ div section h3 {
 /* Requirement: 11/15/20 Footer Styles */
 
 footer {
-   background-color: rgb(215, 167, 245);
+   background-color: rgb(245, 205, 106);
    font-size: 0.9em;
    text-align: center;
    padding: 10px 0px;
