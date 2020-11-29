@@ -25,22 +25,24 @@ body {
 /* Header Styles */
 
  header	{ 
-		color: rgb(18, 74, 61);
+		color: rgb(255, 246, 242);
 		font-family: harrington;
 		min-height: 275px;
 		background-image: url(media/flowers2.jpg);
 		background-size: 100% 100%; 
 		margin-top: 50px;
+		margin-bottom: 50px;
  }
 
 header a {text-decoration: none; }
 header a:link { color: rgb(18, 74, 61); }
-header a:visited { color: rgb(18, 74, 61); }
-header a:hover { color: rgb(155, 250, 220); }
+header a:visited { color: rgb(255, 246, 242); }
+header a:hover { color: rgb(18, 74, 61); }
 
 .home { text-align: center;
 		height: 20vh; 
-        font-size: 225%;
+		font-size: 225%;
+		text-shadow: rgb(10, 201, 179) 3px 3px 4px ;
 }
 
 /* Requirement: 11/14/20 Horizontal navigation styles - horizontal, centered across page - 
@@ -48,19 +50,18 @@ header a:hover { color: rgb(155, 250, 220); }
 
 div.sticky {
   position: sticky;
-  top: 0;
+  top: 5px;
   padding: 5px;
-  background-color: #cae8ca;
-  border: 2px solid #4CAF50;
+  background-color: rgb(202, 232, 202);
+  border: 2px solid rgb(29, 173, 125);
 }
 
 nav { 
 	text-align: center;
 	background-color: rgb(232, 245, 166);
-	margin: 0;
+	margin: auto;
 	padding-top: 0.5em;
 	padding-bottom: 1em;
-	padding-right: 0;
 	line-height: 1.8em;
 	height: auto; 
 	width: 100%;
@@ -82,11 +83,11 @@ nav li {
  }
  nav a:link { color: rgb(0, 0, 0); }
  nav a:visited { color: rgb(171, 31, 245); }
- nav a:hover { color: rgb(111, 179, 157); }
+ nav a:hover { color: rgb(10, 201, 179); }
 
 /* Requirement: 11/15/20 Section Styles will use flex box; each h2 heading will have a background picture */
 
-section#main h2 {
+main h2 {
 	text-align: center;
 	color: rgb(235, 73, 61);
 	font-family: cavolini, serif;
@@ -114,7 +115,7 @@ section#categories {
 /* Requirement: 11/15/20 Footer Styles */
 
 footer {
-   background-color: rgb(245, 205, 106);
+   background-color: rgb(231, 111, 111);
    font-size: 0.9em;
    text-align: center;
    padding: 10px 0px;
