@@ -65,20 +65,49 @@ figure figcaption {
    transform: rotate(30deg)
 }
 
-div#wall > figure a:hover {
+figure:hover {
    width: 400px;
    z-index: 2;
    transition: width 2s;
 }
 
-div#wall > img a:hover  {
+figure img:hover  {
    width: 100%;
-   box-shadow: 10px 10px 20px;
+   box-shadow: 10px 10px 20px 0;
    filter: grayscale(1);
    transition: filter 2s;
 }
 
-div#wall > figcaption a:hover  {
+figure#figcaption:hover  {
    transition: font-size 1.2em 2s;
 }
 
+figure#fig1:hover {
+   transform: rotate(0deg);
+   transition: 2s;
+}
+
+figure#fig2:hover {
+   transform: rotate(0deg);
+   transition: 2s;
+}
+
+figure#fig3:hover {
+   transform: rotate(0deg);
+   transition: 2s;
+}
+
+figure#fig4:hover {
+   transform: rotate(0deg);
+   transition: 2s;
+}
+
+figure#fig5:hover {
+   transform: rotate(0deg);
+   transition: 2s;
+}
+
+figure#fig6:hover {
+   transform: rotate(0deg);
+   transition: 2s;
+}
