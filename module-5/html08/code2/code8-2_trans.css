@@ -78,9 +78,10 @@ figure img:hover  {
    transition: filter 2s;
 }
 
-figure figcaption:hover  {
-   transition: font-size 1.2em 2s;
-}
+figure:hover figcaption {
+   font-size: 1.2em;
+   transition: 2s;
+ }
 
 figure#fig1:hover {
    transform: rotate(0deg);
