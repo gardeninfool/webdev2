@@ -78,7 +78,7 @@ figure img:hover  {
    transition: filter 2s;
 }
 
-figure#figcaption:hover  {
+figure figcaption:hover  {
    transition: font-size 1.2em 2s;
 }
 
