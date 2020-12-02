@@ -7,7 +7,7 @@ Filename: styles.css
 
 */
 
-/* Structural Styles - will add for reset style sheet */
+/* Structural Styles - Requirement - 12/01/20 Reset Styles*/
 
 article, aside, figcaption, figure, footer, header, main, nav, section {
 	display: block;
