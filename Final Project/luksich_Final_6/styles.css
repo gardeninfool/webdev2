@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+/*
+Requirement: 11/14/20
+
+Filename: styles.css
+
+*/
+
+/* Structural Styles - will add for reset style sheet */
+
+
+
+/* Body Styles */
+
+body {
+	background-color: rgb(255, 246, 242);
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 960px;
+	min-width: 640px;
+	width: 95%;
+}
+
+/* Header Styles */
+
+ header	{ 
+		color: rgb(255, 246, 242);
+		font-family: harrington;
+		min-height: 275px;
+		background-image: url(media/flowers2.jpg);
+		background-size: 100% 100%; 
+		margin-top: 50px;
+		margin-bottom: 50px;
+ }
+
+header a {text-decoration: none; }
+header a:link { color: rgb(18, 74, 61); }
+header a:visited { color: rgb(255, 246, 242); }
+header a:hover { color: rgb(18, 74, 61); }
+
+.home { text-align: center;
+		height: 20vh; 
+		font-size: 225%;
+		text-shadow: rgb(10, 201, 179) 3px 3px 4px ;
+}
+
+/* Requirement: 11/14/20 Horizontal navigation styles - horizontal, centered across page - 
+	div.sticky used to keep nav positioned at top of page while scrolling */
+
+div.sticky {
+  position: sticky;
+  top: 5px;
+  padding: 5px;
+  background-color: rgb(202, 232, 202);
+  border: 2px solid rgb(29, 173, 125);
+}
+
+nav { 
+	text-align: center;
+	background-color: rgb(232, 245, 166);
+	margin: auto;
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+	line-height: 1.8em;
+	height: auto; 
+	width: 100%;
+ }
+ 
+nav ul { 
+	list-style-type: none; 
+	margin: 0; 
+	padding-right: 2em; font-size: 1.2em; 
+}
+		  
+nav li { 
+	display: inline; padding-left: 2em;
+	width: 30%
+}
+
+ nav a {text-decoration: none; }
+ nav a:link { color: rgb(0, 0, 0); }
+ nav a:visited { color: rgb(171, 31, 245); }
+ nav a:hover { color: rgb(10, 201, 179); }
+
+/* Requirement: 11/15/20 Section Styles will use flex box; each h2 heading will have a background picture */
+
+main h2 {
+	text-align: center;
+	color: rgb(235, 73, 61);
+	font-family: cavolini, serif;
+	font-size: 1.8em;
+}
+
+section a {
+  text-decoration: none;
+}
+
+section#categories {
+	display: flex;
+	flex-flow: row wrap;
+  }
+	
+  section#categories h3 {
+	flex: 1 3 auto;	
+	border: 2px solid rgb(29, 173, 125);
+	border-radius: 40px;
+	margin: 30px;
+	text-align: center;
+	padding: 70px;
+	background-color: rgb(220, 246, 227);
+	color: rgb(245, 87, 190);
+	font-family: cavolini, serif;
+	font-size: 1.5em;
+  }
+
+/* Requirement: 11/15/20 Footer Styles */
+
+footer {
+   background-color: rgb(231, 111, 111);
+   font-size: 0.9em;
+   text-align: center;
+   padding: 10px 0px;
+}
+
+/* =============================
+   Mobile Styles: 0px to 480px
+   =============================
+*/
+@media only screen and (max-width: 480px) {
+
+}
+
+/* =============================
+tablet Styles: 481px and greater
+   =============================
+*/
+@media only screen and (min-width: 481px) {
+
+
+}
+
+/* ==================================
+   Desktop Styles: 769px and greater
+   ==================================
+*/
+@media only screen and (min-width: 769px) {
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
