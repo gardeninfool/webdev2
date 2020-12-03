@@ -51,11 +51,11 @@ Kathy Luksich
 <!-- wrapper div configured to contain the main element and footer element-->
 
 <section>
-	<h1>Contact Fairy Garden Seed Shop</h1>
+	<h2>Contact Fairy Garden Seed Shop</h2>
 	<p>To sign up for our newsletter and receive coupons and special offers, please fill out the form below.</p>
 	<p>Required fields are marked with an asterisk*</p>
 	
-	<form id="survey" action="http://www.example.com/redball/survey" method="post">
+	<form id="customerinfo" action="http://www.example.com/redball/survey" method="post">
 	  <fieldset id="custInfo">
 	
 	  <legend>Customer Information</legend>
@@ -64,23 +64,20 @@ Kathy Luksich
 		  <input name="CustName" id="name" type="text" placeholder="first and last name"  required />
 	  </div>
 	
-
-	  
 	  <div class="formRow">
 		  <label for="mail">*E-mail</label>
-		  <input name="CustEmail" id="mail" type="email" required />
+		  <input name="CustEmail" id="mail" type="email" placeholder="email address" required />
 	  </div>
 	  
 	  <div class="formRow">
-	  <label for="info">Where did you hear about us?
-	  <br />(select all that apply)
-	  </label>
+	  <label for="info">Where did you hear about us?</label>
 		  <select name="infoSrc" id="info" size="3" multiple>
-			  <option value="internet">Internet</option>
-			  <option value="mag">Magazine</option>
-			  <option value="news">Newspaper</option>
-			  <option value="word">Word of Mouth</option>
-			  <option value="other">Other</option>
+			<option value="internet">Internet</option>
+			<option value="facebook">Facebook</option>
+			<option value="instagram">Instagram</option>
+			<option value="mag">Magazine</option>
+			<option value="word">Word of Mouth</option>
+			<option value="other">Other</option>
 		  </select>
 	  </div>
 	  
@@ -93,14 +90,16 @@ Kathy Luksich
 			  <option value="Fairy Gardens">
 			  <option value="Other">				
 		  </datalist>
-	  </div>		
+	  </div>
+	
+		   <div class="formRow">
+	<label for="commBox">Comments</label>
+	  <textarea name="custExp" id="commBox"></textarea>
+	</div>
 	  
 	  <input name="mailMe" id="mailCB" value="yes" type="checkbox" />
-	  <label for="mailCB">For gardening tips, ideas, coupons and more please add me to your mailing list</label>
+	  <label for="mailCB">For gardening tips, ideas, coupons and more please add me to your mailing list.</label>
 	
-	  <label for="commBox">Tell us more about your experience!</label>
-	  <textarea name="custExp" id="commBox"></textarea>
-	  
   </fieldset>		
 	  
 	  <div id="buttons">
