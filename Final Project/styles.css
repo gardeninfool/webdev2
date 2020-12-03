@@ -117,41 +117,82 @@ section#categories h3 {
 
   /* Styles for Form on "shop" page */
 
-  form#custinfo {
+  form#survey {
 	display: flex;
-	flex-flow: row wrap; 
-  }
-  
-  form#custinfo > fieldset {
-	background-color: (232, 245, 166);
+	flex-flow: row wrap;
+}
+
+form#survey > fieldset {
+	background-color: rgb(241, 232, 181);
 	border-radius: 20px;
 	flex: 1 1 300px;
 	font-size: 0.85em;
-	padding: 20px;
+	padding: 10px;
 	margin: 10px;
-  }
-  
-  div.formRow {
+}
+
+div.formRow {
 	display: flex;
-	  flex-flow: row wrap;
-	  margin: 10px 0px;
-  }
-  
+	flex-flow: row wrap;
+	margin: 7px 0px;
+}
+
   div.formRow > * {
 	flex: 1 1 150px;
   }
-  
-  h2 {
-	color: rgb(245, 135, 190);
-  }
-  
-  legend {
-	font-size: 1.3em;
-	  background-color: rgb(155, 250, 190);
-	  color: black;
-	  padding: 5px;
-  }
-  
+
+/* Legend Styles */
+
+legend {
+	background-color: rgb(179, 20, 25);
+	color: white;
+	padding: 5px;
+}
+
+/* Text Area Styles */
+
+textarea {
+	margin-top: 10px;
+	height: 100px;
+	width: 95%;
+}
+
+/* Spinner Styles */
+
+div.formRow > input#dineSpin {
+	flex: 0 0 50px;
+}
+
+/* Form Button Styles */
+
+div#buttons {
+	text-align: center;
+	width: 100%;
+}
+
+input[type='submit'], input[type='reset'] {
+	font-size: 1.2em;
+	padding: 5px;
+	margin: 15px;
+}
+
+/* Validation Styles */
+
+input:focus, select:focus, textarea:focus {
+	background-color: rgb(220, 255, 220);
+}
+
+input#name:focus:invalid,
+input#mail:focus:invalid {
+	background: rgb(220, 255, 220) url(rb_invalid.png) bottom right/contain no-repeat;
+}
+
+input#name:focus:invalid,
+input#mail:focus:invalid {
+	background: rgb(255, 232, 233) url(rb_invalid.png) bottom right/contain no-repeat;
+}
+
+
   
 
 /* Requirement: 11/15/20 Footer Styles */

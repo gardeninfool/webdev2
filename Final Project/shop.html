@@ -51,48 +51,64 @@ Kathy Luksich
 <!-- wrapper div configured to contain the main element and footer element-->
 
 <section>
-	<h2>Contact Fairy Garden Seed Shop</h2>
-			<p>To sign up for our newsletter and receive coupons and special offers, please fill out the form below.</p>
-			<p>Required fields are marked with an asterisk*</p>
-  
-		<form id="custinfo" action="https://neocities.org" method="post">
-		<fieldset id="signup">
-      
-			<legend>Customer Information</legend>
-    
-    <div class="formRow">
-			<label for="myName">*Name</label>
-			<input name="Custname" id="myName" type="text" placeholder="your name" required />
-    </div>
-      
-    <div class="formRow">
-			<label for="myEmail">*E-mail</label>
-			<input  name="CustEmail" id="myEmail" type="email" placeholder="you@yourdomain.com" required />
-    </div>
-      
-		<div class="formRow">
-		<label for="source">Where did you hear about us?</label>
-		<select name="infoSource" id="source" size="2" multiple>
-			<option value="google">Google</option>
-			<option value="bing">Bing</option>
-			<option value="facebook">Facebook</option>
-      <option value="instagram">Instagram</option>
-			<option value="friend">Friend</option>
-			<option value=radioad>Radio Ad</option>
-    </div>
- </fieldset>
-      
-    <div id="buttons">
-			<input type="submit" value="Submit" />
-      <input type="reset" value="Cancel" />
-    </div>
-      
-     <input name="mailMe" id="mailCB" value="yes" type="checkbox" />
-		<label for="mailCB">For gardening tips, ideas, coupons and more please add me to your mailing list</label>
-      
-		
-	</form>	
-</section>	
+	<h1>Contact Fairy Garden Seed Shop</h1>
+	<p>To sign up for our newsletter and receive coupons and special offers, please fill out the form below.</p>
+	<p>Required fields are marked with an asterisk*</p>
+	
+	<form id="survey" action="http://www.example.com/redball/survey" method="post">
+	  <fieldset id="custInfo">
+	
+	  <legend>Customer Information</legend>
+	  <div class="formRow">
+		  <label for="name">*Name</label>
+		  <input name="CustName" id="name" type="text" placeholder="first and last name"  required />
+	  </div>
+	
+
+	  
+	  <div class="formRow">
+		  <label for="mail">*E-mail</label>
+		  <input name="CustEmail" id="mail" type="email" required />
+	  </div>
+	  
+	  <div class="formRow">
+	  <label for="info">Where did you hear about us?
+	  <br />(select all that apply)
+	  </label>
+		  <select name="infoSrc" id="info" size="3" multiple>
+			  <option value="internet">Internet</option>
+			  <option value="mag">Magazine</option>
+			  <option value="news">Newspaper</option>
+			  <option value="word">Word of Mouth</option>
+			  <option value="other">Other</option>
+		  </select>
+	  </div>
+	  
+	  <div class="formRow">
+		  <label for="int">What are your main interests</label>
+		  <input name="interests" id="int" type="text" list="hobbies" />
+		  <datalist id="hobbies">
+			  <option value="Seed starting">
+			  <option value="Plant growing">
+			  <option value="Fairy Gardens">
+			  <option value="Other">				
+		  </datalist>
+	  </div>		
+	  
+	  <input name="mailMe" id="mailCB" value="yes" type="checkbox" />
+	  <label for="mailCB">For gardening tips, ideas, coupons and more please add me to your mailing list</label>
+	
+	  <label for="commBox">Tell us more about your experience!</label>
+	  <textarea name="custExp" id="commBox"></textarea>
+	  
+  </fieldset>		
+	  
+	  <div id="buttons">
+		  <input type="submit" value="Submit My Survey" />
+		  <input type="reset" value="Cancel" />
+	  </div>
+ </form>
+ </section>
 	
 <!--Requirement 12-2-20 footer-->
 	
