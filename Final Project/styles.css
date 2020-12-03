@@ -115,13 +115,44 @@ section#categories h3 {
 	font-size: 1.5em;
   }
 
- div#wrapper {
-	width:100%;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: #ffedec;
-	padding: 0 0 10px;
-}
+  /* Styles for Form on "shop" page */
+
+  form#info {
+	display: flex;
+	flex-flow: row wrap; 
+  }
+  
+  form#info > fieldset {
+	background-color: (232, 245, 166);
+	border-radius: 20px;
+	flex: 1 1 300px;
+	font-size: 0.85em;
+	padding: 20px;
+	margin: 10px;
+  }
+  
+  div.formRow {
+	display: flex;
+	  flex-flow: row wrap;
+	  margin: 10px 0px;
+  }
+  
+  div.formrow > * {
+	flex: 1 1 150px;
+  }
+  
+  h2 {
+	color: rgb(245, 135, 190);
+  }
+  
+  legend {
+	font-size: 1.3em;
+	  background-color: rgb(155, 250, 190);
+	  color: black;
+	  padding: 5px;
+  }
+  
+  
 
 /* Requirement: 11/15/20 Footer Styles */
 

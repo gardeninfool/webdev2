@@ -50,41 +50,55 @@ Kathy Luksich
 
 <!-- wrapper div configured to contain the main element and footer element-->
 
-<div id="wrapper">
-	<main>
-		<h2>Contact Fairy Garden Seed Shop</h2>
+<section>
+	<h2>Contact Fairy Garden Seed Shop</h2>
 			<p>To sign up for our newsletter and receive coupons and special offers, please fill out the form below.</p>
 			<p>Required fields are marked with an asterisk*</p>
+  
+		<form id="info" action="https://neocities.org" method="post">
 		<fieldset id="signup">
+      
 			<legend>Customer Information</legend>
-				  
-			
-		<form method="post" action="https://neocities.org">
-			<label for="myName">* Name</label>
-			<input type="text" name="myName" id="myName" required="required" 
-				   placeholder="your name">
-			<label for="myEmail">* E-mail</label>
-			<input type="email" name="myEmail" id="myEmail" required="required" 
-				   placeholder="you@yourdomain.com">
-			
-		<label for="howDidYouHearAboutUs">How did you hear about us?</label>
-			<input type="text" name="howDidYouHearAboutUs" id="howDidYouHearAboutUs" list="howDidYouHearaboutus">
+    
+    <div class="formRow">
+			<label for="myName">*Name</label>
+			<input name="Custname" id="myName" type="text" placeholder="your name" required />
+    </div>
+      
+    <div class="formRow">
+			<label for="myEmail">*E-mail</label>
+			<input  name="CustEmail" id="myEmail" type="email" placeholder="you@yourdomain.com" required />
+    </div>
+      
+		<div class="formrow">
+		  <label for="source">How did you hear about us?</label>
+			<select name="source" id="source" size="1" multiple>
 			<datalist id="howDidYouHearaboutus">
-			<option>Google</option>
-			<option>Bing</option>
-			<option>Facebook</option>
-			<option>Friend</option>
-			<option>Radio Ad</option>
+			<option value="google">Google</option>
+			<option value="bing">Bing</option>
+			<option value="facebook">Facebook</option>
+      <option value="instagram">Instagram</option>
+			<option value="friend">Friend</option>
+			<option value=radioad>Radio Ad</option>
 			</datalist>
+    </div>
 
-		  <label for="myComments">Comments</label>
+		<div class="formRow">
+      <label for="myComments">Comments</label>
 			<textarea name="myComments" id="myComments" rows="2" cols="20">
 			</textarea>
-			<input type="submit" value="Send Now">
-			</form>
-			</fieldset>
-		  </main>
-		</div>
+    </div>
+      
+    <div id="buttons">
+			<input type="submit" value="Submit">
+    </div>
+      
+     <input name="mailMe" id="mailCB" value="yes" type="checkbox" />
+		<label for="mailCB">For gardening tips, ideas, coupons and more please add me to your mailing list</label>
+      
+		</fieldset>
+	</form>	
+</section>	
 	
 <!--Requirement 12-2-20 footer-->
 	
