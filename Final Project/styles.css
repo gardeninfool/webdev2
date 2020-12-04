@@ -57,7 +57,7 @@ div.sticky {
 
 nav { 
 	text-align: center;
-	background-color: rgb(232, 245, 166);
+	background-color: rgb(255, 248, 190);
 	margin: auto;
 	padding-top: 0.5em;
 	padding-bottom: 1em;
@@ -109,7 +109,7 @@ section#categories h3 {
 	margin: 30px;
 	text-align: center;
 	padding: 70px;
-	background-color: rgb(220, 246, 227);
+	background-color: rgb(255, 248, 190);
 	color: rgb(245, 87, 190);
 	font-family: cavolini, serif;
 	font-size: 1.5em;
@@ -129,7 +129,7 @@ form#customerinfo {
 }
 
 form#customerinfo > fieldset {
-	background-color: rgb(232, 245, 166);
+	background-color: rgb(255, 248, 190);
 	border-radius: 20px;
 	flex: 1 1 300px;
 	font-size: 1em;
@@ -171,9 +171,10 @@ div#buttons {
 }
 
 input[type='submit'], input[type='reset'] {
-	font-size: 1.2em;
+	background-color: rgb(155, 250, 220);
+	font-size: .8em;
 	padding: 5px;
-	margin: 15px;
+	margin: 5px;
 }
 
 /* Validation Styles */
