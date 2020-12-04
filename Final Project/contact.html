@@ -12,11 +12,11 @@ Kathy Luksich
 
 <head>
 	<!--Requirement: 11/14/20 title-->
-	<title>Shop</title>
+	<title>Contact Us</title>
 	<!--Requirement: 11/14/20 metadata-->
 	<meta charset="utf-8">
 	<!--Requirement: 11/14/20 description-->
-	<meta name="description" content="Shop seed and fairy garden supplies">
+	<meta name="description" content="Contact Us">
 	<!--Requirement: 11/14/20 keywords-->
 	<meta name="keywords" content="HTML, CSS">
 	<!--Requirement: 11/14/20-->
@@ -42,8 +42,8 @@ Kathy Luksich
 			<ul>
 				<li><a href="index.html">Home</a></li> 
 				<li><a href="fairygarden.html">Fairy Gardens</a></li>
-				<li><a href="shop.html">Shop</a></li>
 				<li><a href="tutorials.html">Tutorials</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
 			</ul>
 		</nav>
 		</div>
@@ -51,14 +51,18 @@ Kathy Luksich
 <!-- wrapper div configured to contain the main element and footer element-->
 
 <section>
-	<h2>Contact Fairy Garden Seed Shop</h2>
-	<p>To sign up for our newsletter and receive coupons and special offers, please fill out the form below.</p>
-	<p>Required fields are marked with an asterisk*</p>
+	<div id="heading">
+		<h2>Contact Fairy Garden Seed Shop</h2>
+		<p>To sign up for our newsletter, and to receive coupons and special offers, please create an account and fill out the form below.</p>
+		<p>Required fields are marked with an asterisk*</p>
+	</div>
 	
-	<form id="customerinfo" action="http://www.neocities.org" method="post">
+		<form id="customerinfo" action="http://www.neocities.org" method="post">
+
 	  <fieldset id="custInfo">
 	
-	  <legend>Customer Information</legend>
+		  <legend>Customer Information</legend>
+		  
 	  <div class="formRow">
 		  <label for="name">*Name</label>
 		  <input name="CustName" id="name" type="text" placeholder="your name"  required />
@@ -68,6 +72,11 @@ Kathy Luksich
 		  <label for="mail">*E-mail</label>
 		  <input name="CustEmail" id="mail" type="email" placeholder="email address" required />
 	  </div>
+
+		<div class="formRow">
+			<label for="pwd">*Enter a Password</label>
+			<input name="pasword" id ="pwd" type ="password" value ="secret"  required/>
+		</div> 
 	  
 	  <div class="formRow">
 	  <label for="info">Where did you hear about us?</label>
@@ -93,8 +102,8 @@ Kathy Luksich
 	  </div>
 	
 	<div class="formRow">
-		<label for="commBox">Comments</label>
-	  	<textarea name="custExp" id="commBox" maxlength="250"></textarea>
+		<label for="textArea">Comments</label>
+	  	<textarea name="custExp" id="textArea" maxlength="250"></textarea>
 	</div>
 	  
 	<input name="mail" id="mailfgs" value="yes" type="checkbox" />

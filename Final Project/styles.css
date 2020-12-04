@@ -42,6 +42,7 @@ header a:hover { color: rgb(18, 74, 61); }
 		height: 20vh; 
 		font-size: 225%;
 		text-shadow: rgb(10, 201, 179) 3px 3px 4px ;
+		padding-top: 3em;
 }
 
 /* Requirement: 11/14/20 Horizontal navigation styles - horizontal, centered across page - 
@@ -49,7 +50,7 @@ header a:hover { color: rgb(18, 74, 61); }
 
 div.sticky {
   position: sticky;
-  top: 5px;
+  top: 3px;
   padding: 5px;
   background-color: rgb(202, 232, 202);
   border: 2px solid rgb(29, 173, 125);
@@ -60,7 +61,7 @@ nav {
 	background-color: rgb(255, 248, 190);
 	margin: auto;
 	padding-top: 0.5em;
-	padding-bottom: 1em;
+	padding-bottom: .5em;
 	line-height: 1.8em;
 	height: auto; 
 	width: 100%;
@@ -75,8 +76,9 @@ nav ul {
 		  
 nav li { 
 	display: inline; 
-	padding-left: 2em;
-	width: 90%;
+	padding-left: 3em;
+	padding-right: 3em;
+	width: 100%;
 }
 
  nav a {text-decoration: none; }
@@ -115,12 +117,12 @@ section#categories h3 {
 	font-size: 1.5em;
   }
 
-/* Styles for Form on "shop" page */
+/* Styles for Form on "Contact" page */
 
-h2 {
+div#heading {
 	color: rgb(235, 73, 61);
 	font-family: cavolini, serif;
-	font-size: 1.5em;
+	font-size: 1.2em;
 }
 
 form#customerinfo {
