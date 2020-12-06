@@ -59,26 +59,34 @@ Kathy Luksich
 	
 		<form id="customerinfo" action="http://www.neocities.org" method="post">
 
-	  <fieldset id="custInfo">
+<!-- Requirement: 12/5/2020 Fieldset -->
+		<fieldset id="signupform">
 	
-		  <legend>Customer Information</legend>
+<!-- Requirement: 12/5/2020 Legend -->
+			<legend>Registration & Customer Information</legend>
 		  
-	  <div class="formRow">
-		  <label for="name">*Name</label>
-		  <input name="CustName" id="name" type="text" placeholder="your name"  required />
-	  </div>
-	
-	  <div class="formRow">
-		  <label for="mail">*E-mail</label>
-		  <input name="CustEmail" id="mail" type="email" placeholder="email address" required />
-	  </div>
+<!-- Requirement: 12/5/2020 Field Label, Required, Input Box, Data Type and Placeholder --> 
+	<div class="signUp">
+		  <label for="yourName">*Name</label>
+		  <input name="txtName" id="yourName" type="text" placeholder="your name"  required />
+	</div>
 
-		<div class="formRow">
+<!-- Requirement: 12/5/2020 Field Label, Required, Input Box, Data Type and Placeholder --> 	
+	<div class="signUp">
+		  <label for="yourEmail">*E-mail</label>
+		  <input name="txtEmail" id="yourEmail" type="email" placeholder="email address" required />
+	</div>
+
+<!-- Requirement: 12/5/20 Pattern, Field Label, Required, Data Type and Input Box -->
+	<div class="signUp">
 			<label for="pwd">*Enter a Password</label>
-			<input name="pasword" id ="pwd" type ="password" value ="secret"  required/>
-		</div> 
-	  
-	  <div class="formRow">
+			<input name="password" id ="pwd" type ="password" required
+			pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+			title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+	</div> 
+	 
+	
+	<div class="signUp">
 	  <label for="info">Where did you hear about us?</label>
 		  <select name="infoSrc" id="info" size="3" multiple>
 			<option value="internet">Internet</option>
@@ -88,9 +96,9 @@ Kathy Luksich
 			<option value="word">Word of Mouth</option>
 			<option value="other">Other</option>
 		  </select>
-	  </div>
+	</div>
 	  
-	  <div class="formRow">
+	<div class="signUp">
 		  <label for="int">What is your main interest?</label>
 		  <input name="interests" id="int" type="text" list="hobbies" />
 		  <datalist id="hobbies">
@@ -99,9 +107,10 @@ Kathy Luksich
 			  <option value="Fairy Gardens">
 			  <option value="Other - please specify in comments">				
 		  </datalist>
-	  </div>
+	</div>
 	
-	<div class="formRow">
+<!-- Requirement: 12/05/20 Max Length, Input box, -->
+	<div class="signUp">
 		<label for="textArea">Comments</label>
 	  	<textarea name="custExp" id="textArea" maxlength="250"></textarea>
 	</div>
@@ -110,11 +119,12 @@ Kathy Luksich
 	<label for="mailfgs">For gardening tips, ideas, coupons and more please add me to your mailing list.</label>
 	
   </fieldset>		
-	  
-	  <div id="buttons">
+
+  <!-- Requirements: 12/5/20 Submit and Reset buttons -->
+	<div id="buttons">
 		  <input type="submit" value="Submit" />
 		  <input type="reset" value="Reset" />
-	  </div>
+	</div>
  </form>
  </section>
 	

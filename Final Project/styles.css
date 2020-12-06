@@ -139,13 +139,13 @@ form#customerinfo > fieldset {
 	margin: 10px;
 }
 
-div.formRow {
+div.signUp {
 	display: flex;
 	flex-flow: row wrap;
 	margin: 7px 0px;
 }
 
-div.formRow > * {
+div.signUp > * {
 	flex: 1 1 150px;
   }
 
