@@ -202,9 +202,9 @@ figure {
 	width: 100%;
 	background-color: rgb(255, 248, 190);
 	border-color: rgb(155, 250, 220);
-	border-style: double;
+	border-style: solid;
 	border-radius: 15%;
-	border-width: 10px;
+	border-width: 5px;
 	box-shadow: rgb(245, 205, 106) 20px 20px 10px,
 				rgb(245, 205, 106) -10px 10px 10px;
 }
@@ -213,8 +213,6 @@ figure img {
 	display: block;
 	width: 100%;
 	border-radius: 15%;
-
-
 }
 
 figure figcaption {
@@ -226,7 +224,8 @@ figure figcaption {
 
 /* Requirement 12/7/20 Table */
 
-table { border: 1px #40407A; 
+table.fairyproducts { 
+	border: 1px rgb(231, 111, 111); 
 	margin-bottom: 2em;
 	min-width: 400px;
 	border-collapse: collapse;
@@ -235,13 +234,10 @@ table { border: 1px #40407A;
 }
 	
 td, th { padding: 0.5em; 
-	 border: 1px #40407A; }
+	 border: 1px rgb(231, 111, 111); }
 	 
-tr:nth-of-type(even) { background-color: #ffc5c0; }
+tr:nth-of-type(even) { background-color: rgb(255, 248, 190); }
 
-caption  { margin: 1em;
-	   font-weight: bold; 
-	   font-size: 120%; }
 	   
 /* Configure single column display for narrow viewports using flexbox*/
 
