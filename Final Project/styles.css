@@ -32,7 +32,7 @@ body {
 		margin-top: 50px;
 		margin-bottom: 50px;
  }
-
+ /* Requirement: 12/7/20 Pseudo-Element Link, Visited, Hover */
 header a {text-decoration: none; }
 header a:link { color: rgb(18, 74, 61); }
 header a:visited { color: rgb(255, 246, 242); }
@@ -233,17 +233,19 @@ table.fairyproducts {
 	vertical-align: top; 
 }
 
-div#flow h2 {
+h2 {
 	text-align: center;
-	font-style: cavolini, serif;
-	font-size: 1.3em;
+	font-family: harrington;
+	font-size: 1.6em;
 	color: rgb(231, 111, 111);
 }
 	
 table.fairyproducts td, th { 
+	color: rgb(105, 19, 151);
 	padding: 0.5em; 
-	border: 1px rgb(231, 111, 111); }
-	 
+	border: 2px solid rgb(231, 111, 111); }
+
+/* Requirement 12/7/20 Pseudo-element - nth-of-type */
 tr:nth-of-type(even) { background-color: rgb(255, 248, 190); }
 
 	   
