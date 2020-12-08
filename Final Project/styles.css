@@ -232,9 +232,17 @@ table.fairyproducts {
 	display: inline-block; 
 	vertical-align: top; 
 }
+
+div#flow h2 {
+	text-align: center;
+	font-style: cavolini, serif;
+	font-size: 1.3em;
+	color: rgb(231, 111, 111);
+}
 	
-td, th { padding: 0.5em; 
-	 border: 1px rgb(231, 111, 111); }
+table.fairyproducts td, th { 
+	padding: 0.5em; 
+	border: 1px rgb(231, 111, 111); }
 	 
 tr:nth-of-type(even) { background-color: rgb(255, 248, 190); }
 
