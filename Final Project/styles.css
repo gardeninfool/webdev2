@@ -250,6 +250,40 @@ table.fairyproducts td, th {
 /* Requirement 12/7/20 Pseudo-element - nth-of-type */
 tr:nth-of-type(even) { background-color: rgb(255, 248, 190); }
 
+/* Requirement 12/8/20 Block Quote Styles */
+
+article {
+	text-align: center;
+	color: rgb(105, 19, 151);
+	font-family: harrington;
+	font-size: 1.2em;
+}
+
+blockquote {
+    position: relative;
+	background: rgb(222, 243, 222);
+ }
+
+blockquote:before {
+  position: absolute;
+  content: open-quote;
+  font-size: 2em;
+  margin-left: -0.6em;
+  margin-top: -0.4em;
+}
+blockquote:after {
+  position: absolute;
+  content: close-quote;
+  font-size: 2em;
+  bottom: 0;
+  right: 0;
+  margin-right: -0.6em;
+  margin-bottom: -0.8em;
+}
+blockquote p {
+  display: inline;
+}
+
 
 /* Requirement: 12/05/20 Footer Styles */
 
@@ -261,13 +295,15 @@ footer {
 	padding-top: 5px;
  }
 
-
 /* =============================
    Mobile Styles: 0px to 480px
    =============================
 */
 @media only screen and (max-width: 480px) {
-	
+
+	div.sticky {
+		display: block;
+	}
 }
 
 /* =============================
