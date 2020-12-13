@@ -37,7 +37,6 @@ Kathy Luksich
 	
 <!-- Requirement 11-14-20 navigation list for four website pages-->
 
-		<div class="sticky">
 		<nav>
 			<ul>
 				<li><a href="index.html">Home</a></li> 
@@ -46,48 +45,46 @@ Kathy Luksich
 				<li><a href="contact.html">Contact Us</a></li>
 			</ul>
 		</nav>
+	
+<section>
+		<div id="heading">
+			<h2>Contact Fairy Garden Seed Shop</h2>
+				<p>To sign up for our newsletter, and to receive coupons and special offers, please create an account and fill out the form below.</p>
+				<p>Required fields are marked with an asterisk*</p>
 		</div>
 
-<!-- Requirement: 12/5/20 Form-->
-
-<section>
-	<div id="heading">
-		<h2>Contact Fairy Garden Seed Shop</h2>
-		<p>To sign up for our newsletter, and to receive coupons and special offers, please create an account and fill out the form below.</p>
-		<p>Required fields are marked with an asterisk*</p>
-	</div>
-	
-		<form id="customerinfo" action="http://www.neocities.org" method="post">
+<!-- Requirement: 12/5/20 Form-->	
+	<form id="customerinfo" action="http://www.neocities.org" method="post">
 
 <!-- Requirement: 12/5/2020 Fieldset -->
 		<fieldset id="signupform">
 	
 <!-- Requirement: 12/5/2020 Legend -->
-			<legend>Registration &amp; Customer Information</legend>
+		<legend>Registration &amp; Customer Information</legend>
 		  
 <!-- Requirement: 12/5/2020 Field Label, Required, Input Box, Data Type and Placeholder --> 
-	<div class="signUp">
+		<div class="signUp">
 		  <label for="yourName">*Name</label>
 		  <input name="txtName" id="yourName" type="text" placeholder="your name"  required />
-	</div>
+		</div>
 
 <!-- Requirement: 12/5/2020 Field Label, Required, Input Box, Data Type and Placeholder --> 	
-	<div class="signUp">
+		<div class="signUp">
 		  <label for="yourEmail">*E-mail</label>
 		  <input name="txtEmail" id="yourEmail" type="email" placeholder="email address" required />
-	</div>
+		</div>
 
 <!-- Requirement: 12/5/20 Pattern, Field Label, Required, Data Type and Input Box -->
-	<div class="signUp">
+		<div class="signUp">
 			<label for="pwd">*Enter a Password</label>
 			<input name="password" id ="pwd" type ="password" required
 			pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
 			title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
-	</div> 
+		</div> 
 	 
 	
-	<div class="signUp">
-	  <label for="info">Where did you hear about us?</label>
+		<div class="signUp">
+	  	<label for="info">Where did you hear about us?</label>
 		  <select name="infoSrc" id="info" size="3" multiple>
 			<option value="internet">Internet</option>
 			<option value="facebook">Facebook</option>
@@ -96,44 +93,42 @@ Kathy Luksich
 			<option value="word">Word of Mouth</option>
 			<option value="other">Other</option>
 		  </select>
-	</div>
+		</div>
 	  
-	<div class="signUp">
+		<div class="signUp">
 		  <label for="int">What is your main interest?</label>
-		  <input name="interests" id="int" type="text" list="hobbies" />
-		  <datalist id="hobbies">
-			  <option value="Seed starting">
-			  <option value="Plant growing">
-			  <option value="Fairy Gardens">
-			  <option value="Other - please specify in comments">				
-		  </datalist>
-	</div>
+		  	<input name="interests" id="int" type="text" list="hobbies" />
+		  	<datalist id="hobbies">
+			  	<option value="Seed starting">
+			  	<option value="Plant growing">
+			  	<option value="Fairy Gardens">
+			  	<option value="Other - please specify in comments">				
+		  	</datalist>
+		</div>
 	
 <!-- Requirement: 12/05/20 Max Length, Input box, -->
-	<div class="signUp">
-		<label for="textArea">Comments</label>
-	  	<textarea name="custExp" id="textArea" maxlength="250"></textarea>
-	</div>
+		<div class="signUp">
+			<label for="textArea">Comments</label>
+	  		<textarea name="custExp" id="textArea" maxlength="250"></textarea>
+		</div>
 	  
-	<input name="mail" id="mailfgs" value="yes" type="checkbox" />
-	<label for="mailfgs">For gardening tips, ideas, coupons and more please add me to your mailing list.</label>
-	
+			<input name="mail" id="mailfgs" value="yes" type="checkbox" />
+			<label for="mailfgs">For gardening tips, ideas, coupons and more please add me to your mailing list.</label>
   </fieldset>		
 
-  <!-- Requirements: 12/5/20 Submit and Reset buttons -->
-	<div id="buttons">
-		  <input type="submit" value="Submit" />
-		  <input type="reset" value="Reset" />
-	</div>
- </form>
+<!-- Requirements: 12/5/20 Submit and Reset buttons -->
+		<div id="buttons">
+			<input type="submit" value="Submit" />
+			<input type="reset" value="Reset" />
+		</div>
+ 	</form>
  </section>
 	
 <!-- Requirement 12/2/20 Footer-->
 <!-- Requirement 12/6/20 Address-->
 	
-<footer><small><i>Copyright &copy; 2020 Flowers For Me Seed Shop, a subsidary of Crystal Moon Botanicals, LLC</i></small><br>	
+<footer><small><i>Copyright &copy; 2020 Flowers For Me Seed Shop, a subsidary of Crystal Moon Botanicals, LLC</i></small><address>1234 S Milky Way, Gilbert, AZ 85295</address>	
 	<a href="mailto:crystalmoonbotanicals@gmail.com">CrystalMoonBotanicals@gmail.com</a>
-	
 </footer>
 
 </body>
