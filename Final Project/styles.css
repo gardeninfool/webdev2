@@ -8,12 +8,10 @@ Filename: styles.css
 */
 
 /* Structural Styles - Requirement -  Reset Styles*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, p, blockquote, address, em, img, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center, ul, li, fieldset, form, label, legend,
-table, caption, tr, th, td, article, aside, embed, 
-figure, figcaption, footer, header, menu, nav, section, audio, video {
+html, body, div, span, h2, h3, h4, address, em, img, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, ul, li, fieldset, label, legend,
+table, caption, article, aside, embed, figure, figcaption, footer, header, menu, 
+nav, section, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -32,18 +30,8 @@ body {
 ul, li {
 	list-style: none;
 }
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+
+
 
 /* Body Styles */
 
@@ -59,61 +47,55 @@ body {
 /* Header Styles */
 /* Requirement 12/7/20 Background image */
 
- header	{ 
-		color: rgb(255, 246, 242);
-		font-family: "harrington";
-		min-height: 275px;
-		background-image: url(media/flowers2.jpg);
-		background-size: 100% 100%; 
-		margin-top: 50px;
-		margin-bottom: 20px;
- }
-
- /* Requirement: 12/7/20 Pseudo-Element Link, Visited, Hover */
+header	{ 
+	color: rgb(255, 246, 242);
+	font-family: harrington;
+	min-height: 275px;
+	background-image: url(media/flowers2.jpg);
+	background-size: 100% 100%; 
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+/* Requirement: 12/7/20 Pseudo-Element Link, Visited, Hover */
 header a {text-decoration: none; }
 header a:link { color: rgb(18, 74, 61); }
 header a:visited { color: rgb(255, 246, 242); }
 header a:hover { color: rgb(18, 74, 61); }
 
 .home { text-align: center;
-		height: 20vh; 
-		font-size: 225%;
-		text-shadow: rgb(10, 201, 179) 3px 3px 4px ;
-		padding-top: 3em;
+	height: 20vh; 
+	font-size: 225%;
+	text-shadow: rgb(10, 201, 179) 3px 3px 4px ;
+	padding-top: 3em;
 }
 
 /* Requirement: 11/14/20 Horizontal navigation styles - horizontal, centered across page */
 
-nav { 
-	display: block;
-	text-align: center;
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
 	background-color: rgb(255, 248, 190);
-	margin: auto;
-	padding-top: 0.5em;
-	padding-bottom: 1.5em;
-	line-height: 1.8em;
-	height: auto; 
-	width: 100%;
- }
- 
-nav ul { 
-	list-style-type: none; 
-	margin: 0; 
-	padding-right: 2em; 
-	font-size: 1.3em; 
-}
-		  
-nav li { 
-	display: inline;
-	padding-left: 3em;
-	padding-right: 3em;
-	width: 20%;
-}
-
- nav a {text-decoration: none; }
- nav a:link { color: rgb(171, 31, 245); }
- nav a:visited { color: rgb(171, 31, 245); }
- nav a:hover { color: rgb(10, 201, 179); }
+	border: 1px solid rgb(245, 205, 106);
+  }
+  
+li {
+	float: left;
+	color: rgb(171, 31, 245);
+  }
+  
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+nav a {text-decoration: none; }
+nav a:link { color: rgb(235, 73, 61); }
+nav a:visited { color: rgb(171, 31, 245); }
+nav a:hover { color: rgb(10, 201, 179); }
 
  /* Styles for Home page h2 and section */
 
@@ -124,23 +106,25 @@ nav li {
 	text-shadow: rgb(211, 211, 211) 1px 1px 1px;
 	font-size: 1.6em;
 	color: rgb(171, 31, 245);
-	padding-top: 5px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
  /* Requirement: 11/15/20 Section Styles flex box */ 
 
  main {
 	 background: url(media/blurred_flower_background.jpg) 100%/cover no-repeat, rgb(155, 250, 220);
+	 margin-top: 20px;
  }
  section a {
 	text-decoration: none;
 	text-align: center;
   }
-  
+
   section#categories {
 	display: grid;
 	justify-content: center;
-	}
+}
 
 h3 {
 	border: 2px solid rgb(29, 173, 125);
@@ -260,13 +244,14 @@ figure figcaption {
 	padding: 10px 0;
 }
 
-/* Requirement 12/7/20 Table */
-	h4 {
+h4 {
 	color: rgb(245, 87, 190);
 	font-family: "cavolini", serif;
 	font-size: 1.5em;
+	padding-top: 10px;
 }
 
+/* Requirement 12/7/20 Table */
 table.fairyproducts { 
 	border: 1px rgb(231, 111, 111); 
 	margin-bottom: 2em;
@@ -312,8 +297,8 @@ blockquote:after {
   font-size: 2em;
   bottom: 0;
   right: 0;
-  margin-right: -0.6em;
-  margin-bottom: -0.8em;
+  margin-right: 5em;
+  margin-bottom: -0.4em;
 }
 blockquote p {
   display: inline;
@@ -335,16 +320,49 @@ footer {
 	padding-top: 5px;
   	padding-bottom: 5px;
  }
+/* ================
+   Base Flex Styles
+   ================
+*/
+
+body {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+header, footer {
+	width: 100%;
+}
+
+section#categories {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+section#categories a {
+	flex: 1 1 200px;
+}
+
 
 /* =============================
    Mobile Styles: 0px to 480px
    =============================
 */
 @media only screen and (max-width: 480px) {
-	nav ul {
-		/* On small screens, we are no longer using row direction but column */
-		flex-direction: column;
+	
+	body {
+		display: flex;
+		flex-flow: row wrap;
+	}
+	
+	nav {
+		float: none;
+		width: 100%;
 	  }
+
+	  section a {
+		flex-direction: column;
+	}
 }
 
 /* =============================
@@ -352,11 +370,14 @@ tablet Styles: 481px and greater
    =============================
 */
 @media only screen and (min-width: 481px) {
-	nav {
-		/* When on medium sized screens, we center it by evenly distributing empty space around items */
-		justify-content: space-around;
-	  }
+	nav ul{
+		  display: flex;
+		  flex-flow: row nowrap;
+		}
 
+	nav li {
+		flex: 1 1 auto;
+	}
 }
 
 /* ==================================
@@ -365,72 +386,14 @@ tablet Styles: 481px and greater
 */
 @media only screen and (min-width: 769px) {
 	nav {
-		display: flex;
-		flex-flow: row wrap;
-		/* This aligns items to the end line on main-axis */
-		justify-content: flex-end;
+		display: block;
+		position: relative;
+		width: 100%;
 	  }
 
-}
+	  section#categories {
+		display: grid;
+		justify-content: center;
+	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
