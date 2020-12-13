@@ -4,10 +4,9 @@
 Requirement: 11/14/20
 
 Filename: styles.css
-
 */
 
-/* Structural Styles - Requirement -  Reset Styles*/
+/* Structural Styles - Requirement 12/12/20 Reset Styles */
 html, body, div, span, h2, h3, h4, address, em, img, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b, u, i, center, ul, li, fieldset, label, legend,
 table, caption, article, aside, embed, figure, figcaption, footer, header, menu, 
@@ -30,8 +29,6 @@ body {
 ul, li {
 	list-style: none;
 }
-
-
 
 /* Body Styles */
 
@@ -56,20 +53,22 @@ header	{
 	margin-top: 20px;
 	margin-bottom: 15px;
 }
+
 /* Requirement: 12/7/20 Pseudo-Element Link, Visited, Hover */
 header a {text-decoration: none; }
 header a:link { color: rgb(18, 74, 61); }
 header a:visited { color: rgb(255, 246, 242); }
 header a:hover { color: rgb(18, 74, 61); }
 
-.home { text-align: center;
+.home { 
+	text-align: center;
 	height: 20vh; 
 	font-size: 225%;
 	text-shadow: rgb(10, 201, 179) 3px 3px 4px ;
 	padding-top: 3em;
 }
 
-/* Requirement: 11/14/20 Horizontal navigation styles - horizontal, centered across page */
+/* Horizontal navigation styles - horizontal, centered across page */
 
 ul {
 	list-style-type: none;
@@ -92,12 +91,13 @@ li a {
 	padding: 14px 16px;
 	text-decoration: none;
   }
+
 nav a {text-decoration: none; }
 nav a:link { color: rgb(235, 73, 61); }
 nav a:visited { color: rgb(171, 31, 245); }
 nav a:hover { color: rgb(10, 201, 179); }
 
- /* Styles for Home page h2 and section */
+ /* Styles for Index page, h2 and section */
 
  h2 {
 	text-align: center;
@@ -110,12 +110,13 @@ nav a:hover { color: rgb(10, 201, 179); }
 	padding-bottom: 20px;
 }
 
- /* Requirement: 11/15/20 Section Styles flex box */ 
+/* Requirement 12/12/20 Background image */
 
  main {
 	 background: url(media/blurred_flower_background.jpg) 100%/cover no-repeat, rgb(155, 250, 220);
 	 margin-top: 20px;
  }
+
  section a {
 	text-decoration: none;
 	text-align: center;
@@ -140,9 +141,8 @@ h3 {
 
 /* Requirement: 12/5/20 Styles for Form on "Contact" page */
 
-
 div#heading {
-	color: rgb(235, 73, 61);
+	color: rgb(171, 31, 245);
 	font-family: "cavolini", serif;
 	font-size: 1.2em;
 }
@@ -189,7 +189,7 @@ textarea {
 
 /* Form Button Styles */
 
-div#buttons {
+div#click {
 	text-align: center;
 	width: 100%;
 }
@@ -203,19 +203,24 @@ input[type='submit'], input[type='reset'] {
 
 /* Validation Styles */
 
-input:focus, select:focus, textarea:focus {
-	background-color: rgb(155, 250, 220);
-}
-
-input#name:focus:invalid,
-input#mail:focus:invalid {
-	background: rgb(155, 250, 220) url(rb_invalid.png) bottom right/contain no-repeat;
-}
-
-input#name:focus:invalid,
-input#mail:focus:invalid {
-	background: rgb(155, 250, 220) url(rb_invalid.png) bottom right/contain no-repeat;
-}
+input {
+	border: 1px solid;
+	border-radius: 4px;
+	font-size: 1em;
+	margin: 0.25em;
+	min-width: 125px;
+	padding: 0.5em;
+	transition: background-color 0.5s ease-out;
+  }
+  input:optional {
+	border-color: rgb(171, 31, 245);
+  }
+  input:required {
+	border-color: rgb(0, 0, 0);
+  }
+  input:invalid {
+	border-color: red;
+  }
 
 /* Requirement: 12/6/20 Advanced styling on image using border and box shadow */
 
@@ -244,14 +249,8 @@ figure figcaption {
 	padding: 10px 0;
 }
 
-h4 {
-	color: rgb(245, 87, 190);
-	font-family: "cavolini", serif;
-	font-size: 1.5em;
-	padding-top: 10px;
-}
-
 /* Requirement 12/7/20 Table */
+
 table.fairyproducts { 
 	border: 1px rgb(231, 111, 111); 
 	margin-bottom: 2em;
@@ -268,6 +267,17 @@ table.fairyproducts td, th {
 
 /* Requirement 12/7/20 Pseudo-element - nth-of-type */
 tr:nth-of-type(even) { background-color: rgb(255, 248, 190); }
+
+
+/* Tutorial Page styles */
+/* Heading used on tutorial page */
+
+h4 {
+	color: rgb(245, 87, 190);
+	font-family: "cavolini", serif;
+	font-size: 1.5em;
+	padding-top: 10px;
+}
 
 /* Requirement 12/8/20 Block Quote Styles */
 
@@ -304,11 +314,16 @@ blockquote p {
   display: inline;
 }
 
-aside p {
-	font-family: "cavolini", serif;
+h5 {
 	color: rgb(245, 87, 190);
-	font-size: 1.5em;
-  }
+	font-family: "cavolini", serif;
+	font-size: 1em;
+	padding-top: 5px;
+}
+
+aside {
+	position: relative;
+}
 
 /* Requirement: 12/05/20 Footer Styles */
 
@@ -325,29 +340,17 @@ footer {
    ================
 */
 
-body {
-	display: flex;
-	flex-flow: row wrap;
-}
-
 header, footer {
 	width: 100%;
 }
-
-section#categories {
-	display: flex;
-	flex-flow: row wrap;
-}
-
-section#categories a {
-	flex: 1 1 200px;
-}
-
 
 /* =============================
    Mobile Styles: 0px to 480px
    =============================
 */
+
+/*Requirement 12/13/20 Media Query with 3 Selectors */
+
 @media only screen and (max-width: 480px) {
 	
 	body {
@@ -358,9 +361,9 @@ section#categories a {
 	nav {
 		float: none;
 		width: 100%;
-	  }
+	}
 
-	  section a {
+	section a {
 		flex-direction: column;
 	}
 }
@@ -369,7 +372,10 @@ section#categories a {
 tablet Styles: 481px and greater
    =============================
 */
+
+/* Requirement 12/12/20 Media Query with 3 selectors */
 @media only screen and (min-width: 481px) {
+	
 	nav ul{
 		  display: flex;
 		  flex-flow: row nowrap;
@@ -378,22 +384,37 @@ tablet Styles: 481px and greater
 	nav li {
 		flex: 1 1 auto;
 	}
+
+	table.fairyproducts {
+		display: flex;
+		flex-flow: row wrap;
+	}
 }
 
 /* ==================================
    Desktop Styles: 769px and greater
    ==================================
 */
+
+/* Requirement 12/12/20 Media Query with 3 selectors */
+
 @media only screen and (min-width: 769px) {
+	
 	nav {
 		display: block;
 		position: relative;
 		width: 100%;
 	  }
 
-	  section#categories {
-		display: grid;
-		justify-content: center;
+	  aside {
+		display: flex;
+		flex-flow: row nowrap;
 	}
+
+	h5 {
+		display: flex;
+		flex-flow: row nowrap;
+	}
+}
 
   
